@@ -1,0 +1,52 @@
+digraph datapath
+{
+  rankdir = TB;
+  nodesep = 0.175;
+
+  node [fontname=Consolas, fontsize="14", style="filled"];
+
+  subgraph cluster1 
+  {
+    node [shape="ellipse", fillcolor="yellow"];
+	  color = "red";
+		
+    n_and [label="and", operator="1"];
+    n_add [label="add", operator="2"];
+    n_xor [label="xor", operator="3"];
+
+    n_add -> n_xor;
+    n_and -> n_xor;
+
+    label = "Complex function";
+  }
+  
+  a [shape="invtriangle", label="a", fillcolor="green", input="1"];
+  b [shape="invtriangle", label="b", fillcolor="green", input="2"];
+  c [shape="invtriangle", label="c", fillcolor="green", input="3"];
+  d [shape="invtriangle", label="d", fillcolor="green", input="4"];
+  e [shape="triangle", label="e", fillcolor="cyan", output="1"];
+
+  a -> n_add;
+  b -> n_add;
+  c -> n_and;
+  d -> n_and;
+  
+  mux1 [shape="invtrapezium", label="3-to-1 MUX", fillcolor="grey", hardware="mux"];
+  mux2 [shape="invtrapezium", label="2-to-1 MUX", fillcolor="grey", hardware="mux"];
+  
+  reg1 [shape="box", label="D-type register", fillcolor="salmon", hardware="register"];
+  
+  n_add -> mux1 [headport="ne"];
+  n_and -> mux1 [headport="nw"];
+  n_xor -> mux1 [headport="n"];
+  mux1  -> reg1;
+  reg1  -> mux2 [headport="ne"];
+  mux1  -> mux2 [headport="nw"];  
+  mux2  -> e;
+
+  {rank=source; a b c d;}
+  {rank=same;   mux1;}
+  {rank=same;   reg1;}
+  {rank=same;   mux2;}
+  {rank=sink;   e;}
+}
