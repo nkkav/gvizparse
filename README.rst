@@ -6,7 +6,7 @@
 | **Title**         | gvizparse (Parser for the Graphviz/dot grammar).         |
 +-------------------+----------------------------------------------------------+
 | **Author**        | Nikolaos Kavvadias (C) 2007, 2008, 2009, 2010, 2011,     |
-|                   | 2012, 2013, 2014                                         |
+|                   | 2012, 2013, 2014, 2015                                   |
 +-------------------+----------------------------------------------------------+
 | **Contact**       | nikos@nkavvadias.com                                     |
 +-------------------+----------------------------------------------------------+
@@ -124,7 +124,6 @@ and then run the parser on a sample input:
 The parser can also be tested by running a sample provided script as follows:
 
 | ``$ ./test.sh``
-
 
 
 4. Prerequisites

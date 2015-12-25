@@ -1,9 +1,9 @@
 /*
- * Filename: graphviz.l
+ * Filename: graphviz.y
  * Purpose : Parser for a graph language from AT&T, known by the names Graphviz
  *           and dot.
  * Author  : Nikolaos Kavvadias (C) 2007, 2008, 2009, 2010, 2011, 2012, 2013, 
- *                                  2014
+ *                                  2014, 2015
  *           Original grammar for the GOLD parser builder written by
  *           Richard Schneider <richard@blackhen.co.nz>
  * Date    : 04-Oct-2014
