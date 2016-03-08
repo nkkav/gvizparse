@@ -2,7 +2,7 @@
  * Filename: graphviz.l
  * Purpose : Lexer for the Graphviz/dot file parser.
  * Author  : Nikolaos Kavvadias (C) 2007, 2008, 2009, 2010, 2011, 2012, 2013, 
- *                                  2014, 2015
+ *                                  2014, 2015, 2016
  * Date    : 04-Oct-2014
  * Revision: 1.0.0 (14/10/04)
  *           Updated for github.

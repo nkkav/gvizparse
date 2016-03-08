@@ -6,7 +6,7 @@
 | **Title**         | gvizparse (Parser for the Graphviz/dot grammar).         |
 +-------------------+----------------------------------------------------------+
 | **Author**        | Nikolaos Kavvadias (C) 2007, 2008, 2009, 2010, 2011,     |
-|                   | 2012, 2013, 2014, 2015                                   |
+|                   | 2012, 2013, 2014, 2015, 2016                             |
 +-------------------+----------------------------------------------------------+
 | **Contact**       | nikos@nkavvadias.com                                     |
 +-------------------+----------------------------------------------------------+
@@ -101,7 +101,7 @@ directory:
 
 This will generate diagnostic output for the parser:
 
-``graphviz.output``: 
+``graphviz.output``
   Summary of the automaton's state transitions including shift-reduce and 
   reduce-reduce conflicts (there are no such conflicts present in the Graphviz 
   grammar).
