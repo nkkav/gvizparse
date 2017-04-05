@@ -19,7 +19,7 @@
 #include "graphviz.tab.h"
 
 int enable_debug=0;
-char graphviz_file_name[48], debug_file_name[48];
+char *graphviz_file_name, *debug_file_name;
 //
 extern FILE *graphvizin;
 FILE *debug_file;
@@ -69,6 +69,7 @@ int main(int argc, char **argv)
     else {
       if (argv[i][0] != '-') {
         if (copied_graphviz_file_name == 0) {
+          graphviz_file_name = malloc((strlen(argv[i])+1) * sizeof(char));
           strcpy(graphviz_file_name, argv[i]);
           copied_graphviz_file_name = 1;
         }
@@ -91,6 +92,9 @@ int main(int argc, char **argv)
 
   // Parse graphviz file.
   graphvizparse();
+
+  // Release memory.
+  free(graphviz_file_name);
 
   return 0;
 }

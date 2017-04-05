@@ -21,6 +21,9 @@ void count();
 
 %}
 
+%option noinput
+%option nounput
+
 ws	  [ \t\n]
 anum  [a-zA-Z0-9_][a-zA-Z0-9_.]*
 digit [0-9]
@@ -103,7 +106,7 @@ Z	  [zZ]
 %%
 
 
-yywrap()
+int yywrap()
 {
   return(1);
 }

@@ -20,6 +20,8 @@
 
   extern char *yytext;
   extern FILE *debug_file;
+  int yylex();
+  int graphvizerror();
 
   extern char any_name_s[MAXSIZE];
 %}
