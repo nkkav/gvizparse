@@ -1,8 +1,8 @@
 CC = gcc
 YACC = bison
 LEX = flex
-CFLAGS = -O3 -Wall
-#CFLAGS = -O2 -DMINGW32_GCC
+CFLAGS = -O3 -Wextra -Wall -Wpedantic
+#CFLAGS = -O3 -DMINGW32_GCC
 YFLAGS = -t -v -d -g --report=all -p "graphviz"
 LFLAGS = -Pgraphviz
 EXE = .exe

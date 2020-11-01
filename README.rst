@@ -5,10 +5,9 @@
 +-------------------+----------------------------------------------------------+
 | **Title**         | gvizparse (Parser for the Graphviz/dot grammar).         |
 +-------------------+----------------------------------------------------------+
-| **Author**        | Nikolaos Kavvadias (C) 2007, 2008, 2009, 2010, 2011,     |
-|                   | 2012, 2013, 2014, 2015, 2016, 2017                       |
+| **Author**        | Nikolaos Kavvadias (C) 2007-2020                         |
 +-------------------+----------------------------------------------------------+
-| **Contact**       | nikos@nkavvadias.com                                     |
+| **Contact**       | nikolaos.kavvadias@gmail.com                             |
 +-------------------+----------------------------------------------------------+
 | **Website**       | http://www.nkavvadias.com                                |
 +-------------------+----------------------------------------------------------+
@@ -70,7 +69,7 @@ The ``gvizparse`` file collection includes the following files:
 +-----------------------+------------------------------------------------------+
 | graphviz.l            | Lex/flex lexical analyzer for the Graphviz grammar.  |
 +-----------------------+------------------------------------------------------+
-| graphviz.grm          | Bison/yacc syntax analyzer for the Graphviz grammar. |
+| graphviz.y            | Bison/yacc syntax analyzer for the Graphviz grammar. |
 +-----------------------+------------------------------------------------------+
 | rst2docs.sh           | Bash script for generating the HTML and PDF versions |
 |                       | of the documentation (README).                       |

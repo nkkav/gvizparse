@@ -57,4 +57,3 @@ Comment End = '*/'
                
 <subgraph stmt> ::= subgraph id '{' <stmt list> '}' | '{' <stmt list> '}' | subgraph id ';' 
 <subgraph> ::= subgraph id | '{' <stmt list> '}' | subgraph id '{' <stmt list> '}'  
-
